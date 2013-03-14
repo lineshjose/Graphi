@@ -1,0 +1,305 @@
+/*
+	Theme Name: Graphi
+	URI: http://lineshjose.com/
+	Description: This is a Free WordPress theme built-in widgets and a intuitive theme settings interface... Designed by <a href="http://lineshjose.com/">Linesh Jose</a>. Both the design and code are  released under a <a href="http://creativecommons.org/licenses/by/3.0//">Creative Commons Attribution 3.0 Unported</a> License.
+	Version: 11.08
+	Author: Linesh Jose 
+	Author URI: http://lineshjose.com
+	Tags: light, Three-columns,  right-sidebar,  threaded-comments, translation-ready, white , Black, widgets, HTML5, CSS3
+*/
+
+	*{margin:0;padding:0}	
+	form{margin:0;padding:0;}
+	img{border: 0}
+	
+	a { text-decoration: none; color: #DE0202; }
+	a:hover { text-decoration: none; color: #000; }
+	a:active{margin:1px;}
+	a:focus, a:active {outline:0}
+	a img{border:none;}
+	
+	dl {	margin: 0 0 24px 0;}
+	dt {	font-weight: bold;}
+	dd {	margin-bottom: 18px;}
+	
+	abbr,acronym {border-bottom: 1px dotted #666;	cursor: help;}
+	pre,blockquote
+	{
+		margin:10px 20px;
+		padding:0px 10px;
+		line-height:30px; 
+		border-left:5px solid #ddd; 
+		background:#fafafa;color:#000;
+		font-family:Courier New, Courier, monospace; 
+	}
+	del {	text-decoration: line-through;}
+	hr {background-color: #e7e7e7;border: 0;clear: both;	height: 1px;	margin-bottom: 18px;}
+	code{color:#000;margin:0;padding:0;	font-family:Courier New, Courier, monospace;}
+	
+	ul ,ol,dl {list-style:none;margin:0;padding:0;}
+	i,em,b,u,strong,small,big{margin:0;padding:0;}
+	
+	h1,h2,h3,h4,h5,.title{font-family:georgia;}
+	
+	.line { clear: both; border-bottom: 1px solid #eee; margin:0; }
+	.clear ,.clearboth, .clearall{ clear: both; }
+	.alignright {float: right;}
+	.alignleft {float: left;}
+	.righttext{text-align:right;}
+	.lefttext{text-align:left;}
+	.centertext{text-align:center;}
+	.noborder{border:none;}
+	
+	
+	/* Buttons And Inputss */
+	input[type=text],input[type=password],textarea, select,.textbox{border:1px solid #ddd;margin:0;font-size:12px;padding:4px; border-left:5px solid #ddd;}
+	
+	input[type=submit], input[type=button], input[type=reset], .button, #content  .navigation  a
+	{
+		color:#555;
+		font-size:12px;
+		font-weight:bold;
+		text-decoration:none;
+		border:1px solid #ccc;
+		padding:5px 10px 5px 10px;
+		text-transform: capitalize;
+		background:#fff url('./images/nav_button.jpg') left bottom repeat-x;
+	}
+	input[type=submit]:hover,input[type=button]:hover,input[type=reset]:hover,.button:hover,#content  .navigation  a:hover
+	{
+		color:#101010;
+		cursor: pointer;
+		text-decoration:none;
+		border:1px solid #bbb;
+	}
+	
+	input[type=submit]:active,input[type=button]:active,input[type=reset]:active,.button:active,#content  .navigation  a:active{background:#eee;}
+
+	
+	#sidebar .widget,#qm0 div, #qm0 ul,#qm0 ul li:last-child a
+	{
+		css-border-radius:10px;
+		-moz-border-radius: 0 0 8px 8px;
+		 border-bottom-right-radius: 8px;
+		 border-bottom-left-radius: 8px;
+		-webkit-border-bottom-left-radius:8px;
+		-webkit-border-bottom-right-radius:8px;
+		-khtml-border-bottom-right-radius: 8px;
+		-khtml-border-bottom-left-radius: 8px;
+	}
+	
+	/* --- Fulle round --*/
+	#navigation,#respond ,#comments legend,#content  .post .metadata,#content  .post  .content .wp-caption,#content .posts .date
+	{
+		border-radius: 10px;
+		css-border-radius:10px;
+		-moz-border-radius: 10px ;
+		-khtml-border-radius: 10px ;
+		-webkit-border-radius: 10px;
+	}
+	
+	
+	body { font: 12px  "Arial", Tahoma, Verdana; background: #fff; text-align: center;margin:0; padding:0; color:#000;font-size:13px; -webkit-font-smoothing: antialiased;}
+	#container { width: 1000px;position:relative;margin-top: 0px; margin-left: auto;margin-right: auto;text-align:left;}
+
+	/* Header */
+	#header{margin:0 0 30px;padding: 15px 0px 0px 0px; background: #000  url(./images/header-center.jpg) repeat-x center top;}
+	#header .logo {float: left; text-align:center;   color:#ccc;height:45px}
+	#header .logo a { text-shadow: 1px 1px 1px #7E0E0E;color:#FFF;font-size:30px;font-weight:bold;  }
+	#header .logo a:hover{ text-shadow: 0px 0px 0px #7E0E0E; }
+	
+	#header .search
+	{
+		margin-top:5px;
+		padding:5px 5px 5px 25px;
+		text-align:right;
+		border-radius: 15px;
+		css-border-radius:15px;
+		-moz-border-radius: 15px;
+		-khtml-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		box-shadow: inset 1px 1px 1px 1px #000;
+		-moz-box-shadow: inset 1px 1px 1px 1px #000;
+		-webkit-box-shadow: inset 1px 1px 1px 1px #000;
+		background:#fff url('./images/search_icon.png') 8px 7px no-repeat; 
+	}
+	#header .search  .searchbox{padding:0px;border:none;margin:0; width:200px;}
+
+	/*  Main Menu */
+		/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+		.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}
+		.qmmc .qmdividery{float:left;width:0px;}
+		.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}
+		.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}
+		.qmmc {position:relative;zoom:1;z-index:10;}
+		.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap;position:relative;z-index:1;}
+		.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}
+		.qmsh div a {float:left;}
+		.qmmc div{visibility:hidden;position:absolute;}
+		.qmmc .qmcbox{cursor:default;display:inline-block;position:relative;z-index:1;}
+		.qmmc .qmcbox a{display:inline;}
+		.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}
+		.qmmc li {z-index:auto;}
+		.qmmc ul {left:-10000px;position:absolute;z-index:10;}
+		.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}
+		.qmmc li a {float:none;}
+		.qmmc li:hover>ul{left:auto;}
+		#qm0 ul {top:100%; }
+		#qm0 ul li:hover>ul{top:0px;left:100%;}
+
+		#qm0{text-align:right;margin:0;}
+		#qm0 a{padding:7px 12px 7px 12px;margin:4px 5px 0 0;font-family:Arial;font-size:12px;	text-decoration:none;text-align:left;font-weight:bold;color:#ddd;}
+		#qm0 .sub_menu{padding:6px 20px 7px 12px;}
+		#qm0 a:hover,#qm0 li:hover>a{color: #FFF;background:#4C4C4C;}
+		#qm0 .current_page_item a,#qm0 .current_page_parent a,#qm0 .current-menu-item a{background:#fff !important ; color:#003333 !important; border-top:2px solid #DD4B39;margin:2px 5px 0 0;}
+
+		#qm0 .current_page_item  ul,#qm0 .current_page_parent  ul,#qm0 .current-menu-item ul{background:#fff !important ; border:1px solid #000;border-top:none!important; }
+		#qm0 .current_page_item  ul a:hover,#qm0 .current_page_parent  ul a:hover,#qm0 .current-menu-item ul:hover{background:#4C4C4C !important; color:#FFFFFF !important;}
+
+
+		/*"""""""" (SUB) Items""""""""*/	
+		#qm0 div, #qm0 ul{padding:3px 3px !important; margin:0px;border:none;min-width:180px;	background:#4C4C4C;margin-left:-1px;}
+		#qm0 div a, #qm0 ul a{padding:6px 6px 8px 6px !important;color:#FFF !important;font-size:12px;margin:0px!important; background:none!important; border:none !important;}
+		#qm0 div a:hover, #qm0 ul a:hover	{text-decoration:none!important;	color:#222!important;	background:#eee !important;	}
+		#qm0 ul li:hover>a	{text-decoration:none;	}
+
+		
+		
+	
+
+	/* Page Content */
+	#page{padding:0px; margin:0;}
+	#page h1 { border-bottom: 1px solid #eee; font-size:25px; color: #464646;  margin:0px;color:#000}
+	
+	
+	/* Main Contents */
+	#content {float:left;width:730px;margin:0px;}
+	#content  .posts {margin:0;padding:0; list-style:none;}
+	#content  .posts  .post {float:left; width:340px;margin:20px 0;}
+	#content  .posts  .end{float:right;}
+	#content  .posts  .post .date{background: #fafafa url('./images/time.png')  no-repeat 9px 5px; float:right; color:#555;padding:5px 10px 5px 28px; font-weight:bold;margin-bottom:5px;border:1px solid #eee;}
+	#content  .posts  .post h2{padding:0px;font-size:20px;}
+	#content  .posts  .post .thumb img{float:left; max-width:100px;max-height:100px; margin:5px 8px 0 0;padding:2px;border:1px solid #ccc;}
+	#content  .posts  .post .excerpt{text-align:justify;color: #333;line-height: 1.64em; padding:0px}
+	
+	#content  .navigation{padding:20px 0px;margin-bottom:10px; text-align:right;border-top: 1px solid #eee;}
+	#content  .navigation  a{cursor: pointer;margin:0px 3px 0px 3px ;padding:5px 10px;cursor: pointer;}
+	#content  .navigation  a:hover{text-decoration:none;}
+	#content  .navigation .current{background:#fff;padding:4px 10px 5px 10px ;border:1px solid #A5A7AC;color:#555;font-weight:bold;}
+
+	
+	
+	#content  .post .metadata ,#content .attachment .metadata{margin:10px 0 0 0;padding:8px;list-style:none;background: #fafafa;border:1px solid #eee;}
+	#content  .post .metadata li,#content .attachment .metadata li{display:inline;margin-right:10px;}
+	#content  .post .metadata li a, #content .attachment .metadata li a{font-size:13px; font-weight:bold;}
+	#content  .post .metadata .border,#content .attachment .metadata .border{border-left:1px solid #ccc;padding-left:8px;}
+	#content  .post .metadata  .date,#content .attachment .metadata .date{margin:0;padding:2px;color:#006600;font-size:13px; font-weight:bold;background: url('./images/time.png')  no-repeat;padding-left:25px;background-position:5px;}
+	#content  .post .metadata  .category{background: url('./images/category.png')  no-repeat;padding-left:25px;background-position:5px;}
+	#content  .post .metadata .comment,#content .attachment .metadata .comment {text-align:left;background: url('./images/comment.png')  no-repeat;padding-left:22px;background-position:5px;}
+	#content  .post .metadata  .edit,#content .attachment .metadata .edit{text-align:left;background: url('./images/edit.png')  no-repeat;padding-left:22px;background-position:5px;}
+	
+	
+	#page  .content{font-family: Verdana;line-height: 20px;text-align:justify;color: #333;margin-top:10px}
+	#page  .content p{margin-bottom:15px;font-size:13px;}	
+	#page  .content  h1{font-size:25px;margin-top:3px;clear:both;}
+	#page  .content  h2{font-size:18px;margin-top:5px;clear:both;}
+	#page  .posts .content  h3{font-size:16px;margin-top:5px;clear:both;}
+	#page  .content  h4{font-size:13px;margin:10px 0 0 0; text-decoration:underline;clear:both;}
+	#page  .content  ul {list-style: square;margin: 15px;padding:10px;}
+	#page  .content  ol {list-style: decimal;margin: 15px;padding:10px;}
+	#page  .content  dl{margin: 15px;padding:10px;}
+	#page  .content  ol,#page  .content  ul,#page   .content  dl,#page     .content  table{margin:0 10px 30px 0px;}
+	#page  .content  ol,#page  .content  ul,#page   .content  dl{padding:5px 0 0 30px;}
+	#page  .content  ol ol {list-style: upper-alpha;}
+	#page  .content  ol ol ol {list-style: lower-roman;}
+	#page  .content  ol ol ol ol {list-style: lower-alpha;}
+	#page  .content  ul ul,ol ol,ul ol,ol ul {margin-bottom: 0;}
+	#page  .post .content  fieldset{border:1px solid #ccc;padding:10px;}	
+	#page  .post .content  fieldset legend{font-size:13px;font-weight:bold;padding:0 8px 0 8px; }
+	#page  .post .content  table{width:100%;}
+	#page  .post .content  table th{background:#f1f1f1;padding:4px;}
+	#page  .post .content  table td{border:#f1f1f1 1px solid;padding:4px;}
+	#page  .content .thumb img{background:#ccc; margin:0px 8px 8px 0px;padding:2px;}
+	#page  .content .image {max-width:650px;margin:10px 0 10px 0;} 
+	#page  .content .wp-caption {background:#f9f9f9; border:1px solid #ddd;padding:8px;margin:0px;}
+	#page  .content .wp-caption p{margin:1px;text-align:center;font-weight:bold;}
+	
+	
+	
+	/* comments */
+	#comments{border:none; margin:20px 0 20px 0;padding:0px;}
+	#comments legend{color:#333; font-size:15px; font-weight:bold;background: #fafafa  url('./images/comment.png')  no-repeat 10px 8px;border:1px solid #ddd;padding:5px 10px 7px 28px; }
+	#comments .commentlist{padding-top:5px;}
+	#comments .commentlist li{margin:10px 0;padding:5px; background:#fafafa;border-bottom:1px dashed #ccc;border-top:1px dashed #ccc;}
+	#comments .commentlist li ul {margin-left:50px;}
+	#comments .commentlist li ul li{border-bottom:0px dashed #ccc;border-top:1px dashed #ccc;}
+	#comments .commentlist table  {padding:0;margin:0;}
+	#comments .commentlist table td{vertical-align:top;}
+	#comments .commentlist table .avt{width:58px;}
+	#comments .commentlist table .avt img{float:left; height:48px; width:48px; padding:0px; margin:0px 5px 0px 0px ; padding:3px; border:1px solid #ccc;}
+	#comments .commentlist  cite {font-style:normal; font-weight:bold;}
+	#comments .commentlist  cite  a {text-decoration:none; font-size:13px}
+	#comments .commentlist  a:hover{text-decoration:underline;}
+	#comments .commentlist table td .info {padding:0px;margin-bottom:5px;}
+	#comments .commentlist table td .info  .date a, #comments .commentlist  em {font-size:11px;color:#999;font-size:11px;}
+	#comments .commentlist table td .info span a{font-size:11px;}
+	#comments .commentlist table td  .text {font-size:12px;text-align:justify;color:#222;}
+		
+		
+	
+	#respond  {background: #fafafa url('./images/sidebar_hr.png') left 30px no-repeat;border:1px solid #ddd;padding:8px ;margin:10px 0;border:1px solid #eee;}
+	#respond  form {margin-top:20px;}
+	#respond  form table{width:100%;}
+	#respond  form table td{text-align:left; font-size:11px; vertical-align:top;}
+	#respond  form table td table{margin-bottom:10px;padding:0;}
+	#respond .textbox {width:190px;margin:0 10px 0 0;}
+	#respond textarea{width:95%;height:50px;margin-bottom:5px;}
+	#respond  label{font-weight:bold;}
+	#respond span{color:red;}
+	#respond small{font-size:11px;}
+	
+	/* Sidebar */
+	#sidebar {float:right; text-align:center;padding:0px; vertical-align:top;margin:-15px 0 0;}
+	#sidebar  .widget{border:1px solid #eee;text-align:left;  list-style:none; margin:0px 0 10px 0;width:250px; background: #fafafa url('./images/sidebar_hr.png') center 28px no-repeat;padding:1px;}
+	#sidebar  .widget h3,#page .page .sidebar .widget h3 a{color:#555;font-size:16px;padding:5px 3px 6px 15px; background:#eee } 
+	#sidebar  .widget h3 a:hover{text-decoration:none;} 
+	#sidebar  .widget .button{padding:3px 10px 4px 10px ;}
+	#sidebar  .widget ul,#sidebar  .widget form,#sidebar  .widget div{margin:0;padding:5px 10px }
+	#sidebar  .widget ul li{padding:4px 0px ;margin:0px;}
+	#sidebar  .widget ul li a,#sidebar a{text-decoration:none;font-size:12px;}
+	#sidebar  .widget  ul li a:hover,#sidebar a:hover{color:#000;text-decoration:underline;}
+	#sidebar  .widget  ul li ul{margin:0px;padding:5px 0px 0px 18px;list-style: url('./images/arrow.gif');}
+	#sidebar  .widget  ul li ul li  {margin:0;padding:0px 0px 2px 0px ;}
+	#sidebar  #wp-calendar{color:#000;margin-bottom:10px;}
+	#sidebar  .textbox{width:150px;}
+	#sidebar  caption{font-weight:bold;}
+	#sidebar  table{padding:0;margin:0; width:100%;}
+	#sidebar   th{font-size:12px;}
+	#sidebar   td {text-align: left;font-size:12px;}
+	#wp-calendar {padding:0;margin:0px;}
+	#wp-calendar  td,#wp-calendar  th{text-align: center;}
+	
+	#sidebar .connection ul li{display:inline-table;}
+	#sidebar .connection ul li a img{background:  url('./images/social-icons.png') -4px -3px no-repeat; width:59px; height:60px;}
+	#sidebar .connection ul li a .twitter:hover{background-position:-4px -86px;}
+	
+	#sidebar .connection ul li a .facebook{background-position:-150px -3px;}
+	#sidebar .connection ul li a .facebook:hover{background-position:-150px -86px;}
+	
+	#sidebar .connection ul li a .google_plus{background-position:-79px -3px;}
+	#sidebar .connection ul li a .google_plus:hover{background-position:-79px -86px;}
+	
+	#sidebar .connection ul li a .rss{background-position:-226px -3px;}
+	#sidebar .connection ul li a .rss:hover{background-position:-226px -86px;}
+	
+	/* Footer */
+	#footer {padding: 10px 0 30px;color:#999;text-align:left;border-top:1px solid #eee;margin:30px 0px;}
+	#footer h4{margin:0;paddinf:0;font-size:25px;}
+	#footer p{color:#999;font-size: 13px; margin-bottom:5px}
+	#footer a {color: #999;text-decoration:none;}
+	footer ul{margin-top:5px;padding:0 ;text-align:left;}
+	#footer li{display:inline; padding:0;padding:0 5px; border-right: 1px solid #ddd}
+	#footer li:first-child{padding-left:0;}
+	#footer li:last-child{border:none}
+	#footer li a{font-size:11px;}
+	#footer a:hover {color: #777; text-decoration:underline}
