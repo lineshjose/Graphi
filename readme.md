@@ -1,6 +1,6 @@
 Graphi
 ====================================
-This is a Free WordPress mobile phone theme with flexible-width design.
+This is a Free WordPress theme.
 
 
  Theme Copyright:   
