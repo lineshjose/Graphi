@@ -1,6 +1,6 @@
 Graphi
 ====================================
-This is a Graphi Free WordPress theme.
+A free WordPress theme.
 
 
  Theme Copyright:   
