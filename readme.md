@@ -1,7 +1,7 @@
 # Graphi
 A free WordPress theme.
 
-![beautiful screenshot](./screenshot.png)
+![beautiful screenshot](./graphi.png)
 
 
 ## Installation:
